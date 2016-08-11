@@ -6,3 +6,22 @@
 # In your final submission:
 #  - Do not print anything extraneous!
 #  - Do not put anything but pass in main()
+
+
+def cumulative_sum(list_num):
+    
+    limit = len(list_num)
+    sum_list = [0]*limit
+
+    for count in range(0, limit):
+        sum_list[count] = sum(list_num[:count+1])
+    return sum_list
+        
+
+
+def main():
+    ...
+    #print(cumulative_sum([1, 2, 3, 5]))
+ 
+if __name__ == '__main__':
+    main()
